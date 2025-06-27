@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-// Lucide icons from global window object
-const { Calendar, Target, Users, Brain, Activity, ChevronRight, Check, X, Plus, BarChart3, TrendingUp, Clock, BookOpen, Map, LogOut, Loader } = lucide;
+// Lucide icons from global window object// Use global window icons (defined in index.html)
+const { Calendar, Target, Users, Brain, Activity, ChevronRight, Check, X, Plus, BarChart3, TrendingUp, Clock, BookOpen, Map, LogOut, Loader } = window;
 
 // Supabase client setup
 const SUPABASE_URL = 'https://gjxrzgvfloqjlonuryrw.supabase.co';
