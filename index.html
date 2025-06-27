@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Beta Dashboard</title>
+    
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Load our app -->
+    <script type="text/babel" src="app.js"></script>
+    
+    <!-- Mount the app -->
+    <script type="text/babel">
+        // Wait for the app to load
+        window.addEventListener('load', () => {
+            const { SystemBetaDashboard } = window;
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+            root.render(<SystemBetaDashboard />);
+        });
+    </script>
+</body>
+</html>
